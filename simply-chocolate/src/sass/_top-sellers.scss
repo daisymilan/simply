@@ -1,0 +1,147 @@
+.ts-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    column-gap: 16px; //from 20px to 16px
+    row-gap: 0;
+    padding-bottom: 0px;
+    //added
+    @media screen and (min-width: 767px) {
+        padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 32px;
+    }
+}
+
+// added
+.hidden-text {
+    width: 335px;
+    display: unset;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+        padding-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+        padding-bottom: 0px;
+    }
+}
+
+.hidden-text-mob {
+    display: none;
+    
+    @media screen and (min-width: 767px) {
+        display: unset;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: unset;
+    }
+}
+
+.ts-image {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 3px 9px 5px rgba(0, 0, 0, 0.027);
+    
+    
+    // added
+    @media screen and (min-width: 767px) {
+        width: 344px;
+        margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        margin-bottom: 0px;
+    }
+}
+
+.ts-image:hover{
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.ts-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+     
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        width: 1136px;
+        // margin-left: 26px; removed
+    }
+}
+
+.ts-text {
+    font-size: 14px;
+    // added
+    max-width: 306px;
+    text-align: left;
+    line-height: 18px;
+    
+    letter-spacing: -0.28px;
+
+    @media screen and (min-width: 768px) {
+        width: 306px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 407px;
+    }
+}
+
+.ts-btn {
+    border-radius: 100px;
+    background: var(--orangepeel);
+    border: 1px solid #fff; //added
+    cursor: pointer; //added
+    padding: 14px 40px; //added
+    //adding font style
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1), transform .25s cubic-bezier(.4, 0, .2, 1);
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+
+    }
+
+    // @media screen and (min-width: 768px) {
+    //     align-self: right;
+    //     padding-right: 20px;
+    // }
+}
+
+.ts-btn:hover,
+.ts-btn:active {
+    color: var(--orangepeel);
+    background-color: #FCF1E0;
+    opacity: 1.0;
+}
+
+.hide-block {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: unset;
+    }
+}
